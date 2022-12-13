@@ -9,24 +9,11 @@ import CartContainer from "./CartContainer";
 import { getAllFoodItems } from "../utils/firebaseFunctions";
 
 const MainContainer = () => {
-
-// const [{},dispatch]=useStateValue();
-
-
-
   const [{ foodItems, cartShow }, dispatch] = useStateValue();
   const [scrollValue, setScrollValue] = useState(0);
 
   useEffect(() => {}, [scrollValue, cartShow]);
-  // const fetchData=async ()=>{
-  //   await getAllFoodItemstems().then((data)=>{
-  //     console.log(data);
-  //   });
-  // }
-  
-  // useEffect(()=>{
-  //   fetchData();
-  // },[]);
+
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center ">
       <HomeContainer />

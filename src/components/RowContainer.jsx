@@ -14,7 +14,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
 
   const addtocart = () => {
     dispatch({
-      type: actionType.SET_CARTITEMS,
+      type: actionType.SET_CART_ITEMS,
       cartItems: items,
     });
     localStorage.setItem("cartItems", JSON.stringify(items));
